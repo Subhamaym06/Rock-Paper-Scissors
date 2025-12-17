@@ -84,8 +84,8 @@ To get started with the Rock-Paper-Scissors game locally, follow these steps:
    ```
    
 2. **Navigate to the project folder:**
-```bash
+  ```bash
     cd Tic-Tac-Toe
-```
+  ```
 
 3. Open the `index.html` file in your browser to play the game.
