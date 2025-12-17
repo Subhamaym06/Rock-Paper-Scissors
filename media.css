@@ -1,0 +1,199 @@
+/* =========================================
+   Media Query: Small Screen Computer Devices (≤ 1600px)
+   ========================================= */
+@media only screen and (max-width:1600px) {
+
+    /* Adjust display size for slightly smaller desktops */
+    .display {
+        height: 20vh;
+        width: 20vw;
+        font-size: 9em;
+    }
+}
+
+/* =========================================
+   Media Query: Tablet Devices (≤ 992px)
+   ========================================= */
+@media only screen and (max-width:992px) {
+
+    /* Reduce display size for tablet screens */
+    .display {
+        height: 15vh;
+        width: 20vw;
+        font-size: 8em;
+    }
+
+    /* Footer text styling for copyright and love message */
+    footer .copyright,
+    .love {
+        font-family: "Itim", cursive;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 25px;
+    }
+
+    /* Footer section heading size adjustment */
+    footer .link .heading {
+        font-family: "Goldman", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 20px;
+        text-decoration: double underline;
+    }
+
+    /* Footer link titles */
+    footer .link .title {
+        font-family: "Goldman", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+    }
+
+    /* Resize footer icons for tablets */
+    footer .link img {
+        height: 15px;
+        width: 15px;
+    }
+
+    /* Icon wrapper size reduction */
+    footer .icons div {
+        height: 30px;
+        width: 30px;
+        position: relative;
+    }
+
+    /* Reduce vertical spacing around icons */
+    footer .icons {
+        padding: 10px 0px;
+    }
+
+    /* Icon label text adjustments */
+    footer .icons div div {
+        font-family: "Itim", cursive;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 8px;
+        position: absolute;
+        top: 20px;
+        z-index: -1;
+        color: black;
+    }
+
+    /* Slightly reduced hover zoom for touch devices */
+    footer .icons>a>div:hover {
+        transform: scale(1.25);
+        z-index: 0;
+    }
+}
+
+/* =========================================
+   Media Query: Small Tablet Devices (≤ 735px)
+   ========================================= */
+@media only screen and (max-width:735px) {
+
+    /* Further scaling of display area */
+    .display {
+        height: 12vh;
+        width: 20vw;
+        font-size: 8em;
+    }
+
+}
+
+/* =========================================
+   Media Query: Large Screen Mobile Devices (≤ 690px)
+   ========================================= */
+@media only screen and (max-width:690px) {
+
+    /* Compact display for large mobiles */
+    .display {
+        height: 10vh;
+        width: 15vw;
+        font-size: 6em;
+    }
+
+    /* Reduce message text size */
+    .msg {
+        font-size: 0.75em;
+    }
+}
+
+/* =========================================
+   Media Query: Mobile Devices (≤ 564px)
+   ========================================= */
+@media only screen and (max-width:564px) {
+
+    /* Slight width adjustment to avoid overflow */
+    .play {
+        width: 98vw;
+    }
+
+    /* Optimize display size for mobiles */
+    .display {
+        height: 10vh;
+        width: 20vw;
+        font-size: 5.5em;
+    }
+
+    /* Smaller result text */
+    .msg {
+        font-size: 0.55em;
+    }
+
+    /* Reduce countdown font size */
+    .countdown {
+        font-size: 0.6em;
+    }
+}
+
+/* =========================================
+   Media Query: Small Mobile Devices (≤ 466px)
+   ========================================= */
+
+@media only screen and (max-width:466px) {
+
+    /* Reduce main heading size */
+    header {
+        font-size: 3rem;
+    }
+
+    /* Further display scaling */
+    .display {
+        height: 8vh;
+        font-size: 5em;
+    }
+
+    /* Smaller message text */
+    .msg {
+        font-size: 0.5em;
+    }
+}
+
+/* =========================================
+   Media Query: Extra Small Mobile Devices (≤ 385px)
+   ========================================= */
+
+@media only screen and (max-width:386px) {
+
+    /* Compact header text for very small screens */
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    /* Prevent horizontal overflow */
+    .play {
+        width: 98vw;
+    }
+
+    /* Minimum readable display size */
+    .display {
+        height: 8vh;
+        width: 21vw;
+        font-size: 4em;
+    }
+
+    /* Smallest readable message text */
+    .msg {
+        font-size: 0.4em;
+    }
+}

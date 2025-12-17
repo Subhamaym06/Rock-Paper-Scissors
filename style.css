@@ -1,0 +1,243 @@
+/* Global reset to remove default spacing and ensure consistent box sizing */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page-level styling */
+body{
+    padding-top: 3em;              /* Space from top for header visibility */
+    background-color: #473fef57;   /* Light theme background */
+}
+
+/* Main heading styles */
+header {
+    text-align: center;
+    margin: 2rem;
+    font-family: "Goldman", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4rem;
+    text-decoration: wavy underline;
+}
+
+/* Main play area container */
+.play{
+    height: 50vh;
+    width: 100vw;
+    display: flex;                 /* Horizontal layout for play sections */
+    justify-content: space-around;
+    align-items: center;
+    gap: 2em;
+}
+
+/* Common styling for all direct children of .play */
+.play>*{
+    border: 2px solid black;
+    border-radius: 1.23em;
+    padding: 2em;
+}
+
+/* Individual player/computer box */
+.playbox{
+    text-align: center;
+    padding: 0;
+}
+
+/* Player and computer name styling */
+.name{
+    width: 20vw;
+    white-space: nowrap;           /* Prevent text wrapping */
+    overflow:auto hidden;          /* Allow horizontal scroll if name is long */
+}
+
+/* Area where emoji choices are displayed */
+.display{
+    height: 30vh;
+    width: 20vw;
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Score display */
+.score{
+    font-size: 3em;
+}
+
+/* Center message section between player and computer */
+.message{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    text-align: center;
+    font-size: 1.23em;
+}
+
+/* Countdown / game status box */
+.countdown{
+    border: 2px solid black;
+    border-radius: 1.23em;
+    text-align: center;
+    margin: 2em 0;
+    font-weight: bolder;
+    color: blue;
+}
+
+/* Container for choice buttons */
+.options{
+    height: 20vh;
+    margin: 3em 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Choice buttons (rock, paper, scissors) */
+.options button{
+    font-size: 5em;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+/* Result message container */
+.msg{
+    padding: 0.5em;
+    font-weight: bolder;
+    border-radius: 1.23em;
+}
+
+/* Footer base styling */
+footer {
+    width: 100vw;
+    padding: 0;
+    background-color: #c0bba8;
+}
+
+/* Copyright and signature text */
+footer .copyright,
+.love {
+    font-family: "Itim", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+}
+
+/* Footer links section */
+footer .link {
+    background-color: #b6b19d;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+/* Contact and social section spacing */
+footer .link .contact{
+    margin: 0px 10px;
+}
+footer .link .social {
+    margin: 0px 10px;
+}
+
+/* Footer section headings */
+footer .link .heading {
+    font-family: "Goldman", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: double;
+    text-decoration-line: underline;
+}
+
+/* Footer subsection titles */
+footer .link .title {
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+
+/* Footer icon images */
+footer .link img {
+    height: 20px;
+    width:  20px;
+}
+
+/* Icon container dimensions */
+footer .icons div {
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+/* Spacing around icons */
+footer .icons {
+    padding: 20px 0px;
+}
+
+/* Icon appearance */
+footer .icons div {
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Icon label text */
+footer .icons div div {
+    font-family: "Itim", cursive;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    z-index: -1;                   /* Hidden behind icon by default */
+    color: black
+}
+
+/* Hover zoom effect for icons */
+footer .icons>a>div:hover {
+    transform: scale(1.5);
+    z-index: 0;
+}
+
+/* Individual hover effects for each social platform */
+footer #email:hover {
+    background-color: #d73f2e;
+    box-shadow: 0px 0px 7px 8px #d73f2e;
+}
+
+footer #whatsapp:hover {
+    background-color: #2ac758;
+    box-shadow: 0px 0px 7px 8px #2ac758;
+}
+
+footer #linkedin:hover {
+    background-color: #0841d1;
+    box-shadow: 0px 0px 7px 8px #0841d1;
+}
+
+footer #github:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 7px 8px #ffffff;
+}
+
+footer #twitter:hover {
+    background-color: #797575;
+    box-shadow: 0px 0px 7px 8px #797575;
+}
+
+footer #facebook:hover {
+    background-color: #1873eb;
+    box-shadow: 0px 0px 7px 8px #1873eb;
+}
+
+footer #instagram:hover {
+    background-color: #f70961;
+    box-shadow: 0px 0px 7px 8px #f70961;
+}
+
+footer #telegram:hover {
+    background-color: #27a3e3;
+    box-shadow: 0px 0px 7px 8px #27a3e3;
+}
