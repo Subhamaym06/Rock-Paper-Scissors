@@ -76,16 +76,15 @@ If you'd like to contribute to this project, feel free to fork the repository, m
 
 ## 💻 Installation
 
-To get started with the Rock-Paper-Scissors game locally, follow these steps:
+To get started with the Tic-Tac-Toe game locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/Subhamaym06/Rock-Paper-Scissors.git
    ```
-   
-2. **Navigate to the project folder:**
-  ```bash
-    cd Tic-Tac-Toe
-  ```
 
+2. **Navigate to the project folder:**
+    ```bash
+    cd Rock-Paper-Scissors
+    ```
 3. Open the `index.html` file in your browser to play the game.
